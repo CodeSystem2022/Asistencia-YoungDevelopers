@@ -3,6 +3,7 @@ Integrantes :
 Ceschin Agustin-Diaz Micaela-Funes Nahuel-Moyano Pablo-Moyano Lucas-Morbidelli Valentin-Rebolledo Lujan-Rebolledo Lourdes-Zambrana Ana
 
 Diaz Micaela Ejercicio Cubo Python
+
 class Cubo:
     def __init__(self, ancho, alto, profundidad):
         self.ancho = ancho
