@@ -58,3 +58,67 @@ print(f'La resta de los números es: {aritmetica1.restar()}')
 print(f'La multiplicación de los números es: {aritmetica1.multiplicar()}')
 print(f'La división de los números es: {aritmetica1.dividir():.2f}')
 ---------------------------------------------------------------------------------------------------------------------------------------
+Montoya Lucas
+#Tarea: crear 3 objetos mas utilizando los metodos getter and setter para modificar, y mostrar los cambios con el metodo mostrar_detalle
+
+class Persona2:
+    def __init__(self, nombre, apellido,edad): #Esta encapsulado
+        self._nombre = nombre
+        self._apellido = apellido
+        self._edad = edad
+    def mostrar_detalles(self):
+        print(f'Los datos a mostrar son los siguientes: {self._nombre} {self._apellido} {self._edad}')
+
+    @property 
+    def nombre(self): #Metodo Getter
+        print('Estamos usando el metodo get')
+        return self._nombre
+    @nombre.setter
+    def nombre(self, nombre): #Metodo Setter
+        print('Estamos usando el metodo set')
+        self._nombre = nombre
+    
+    @property 
+    def apellido(self): #Metodo Getter
+        return self._apellido
+    @apellido.setter
+    def apellido(self, apellido): #Metodo Setter
+        self._apellido = apellido
+   
+   @property
+    def edad(self): #Metodo Getter
+        return self._edad
+    @edad.setter
+    def edad(self,edad): #Metodo Setter
+        self._edad = edad
+
+# Objeto 1:
+persona2 = Persona2('Leo','Messi',30)
+print(persona2.nombre)
+print(persona2.apellido)
+print(persona2.edad)
+persona2.nombre = 'Lionel'
+persona2.apellido = 'Messi'
+persona2.edad = 35
+print(persona2.mostrar_detalles())
+
+#Objeto 2:
+persona3 = Persona2('Kun','Aguero',32)
+print(persona3.nombre)
+print(persona3.apellido)
+print(persona3.edad)
+persona3.nombre = 'Sergio'
+persona3.apellido = 'Aguero'
+persona3.edad = 34
+print(persona3.mostrar_detalles())
+
+#Objeto 3:
+persona4 = Persona2('Dibu','Martinez',28)
+print(persona4.nombre)
+print(persona4.apellido)
+print(persona4.edad)
+persona4.nombre = 'Emiliano'
+persona4.apellido = 'Martinez'
+persona4.edad = 30
+print(persona4.mostrar_detalles())
+---------------------------------------------------------------------------------------------------------------------------------------
