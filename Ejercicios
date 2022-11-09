@@ -58,7 +58,7 @@ print(f'La resta de los números es: {aritmetica1.restar()}')
 print(f'La multiplicación de los números es: {aritmetica1.multiplicar()}')
 print(f'La división de los números es: {aritmetica1.dividir():.2f}')
 ---------------------------------------------------------------------------------------------------------------------------------------
-Montoya Franquito
+Montoya Lucas
 #Tarea: crear 3 objetos mas utilizando los metodos getter and setter 
 #para modificar, y mostrar los cambios con el metodo mostrar_detalle
 class Persona2:
