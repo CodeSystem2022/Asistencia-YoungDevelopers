@@ -59,8 +59,8 @@ print(f'La multiplicación de los números es: {aritmetica1.multiplicar()}')
 print(f'La división de los números es: {aritmetica1.dividir():.2f}')
 ---------------------------------------------------------------------------------------------------------------------------------------
 Montoya Lucas
-#Tarea: crear 3 objetos mas utilizando los metodos getter and setter para modificar, y mostrar los cambios con el metodo mostrar_detalle
-
+#Tarea: crear 3 objetos mas utilizando los metodos getter and setter 
+#para modificar, y mostrar los cambios con el metodo mostrar_detalle
 class Persona2:
     def __init__(self, nombre, apellido,edad): #Esta encapsulado
         self._nombre = nombre
@@ -68,7 +68,7 @@ class Persona2:
         self._edad = edad
     def mostrar_detalles(self):
         print(f'Los datos a mostrar son los siguientes: {self._nombre} {self._apellido} {self._edad}')
-
+    
     @property 
     def nombre(self): #Metodo Getter
         print('Estamos usando el metodo get')
